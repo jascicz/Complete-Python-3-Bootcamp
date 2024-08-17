@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib as plt
 
 # Título de la aplicación
 st.title("Mi Primera Aplicación en Streamlit")
@@ -18,9 +17,7 @@ st.write(df)
 
 # Gráfico simple
 st.write("Gráfico de Edad:")
-fig, ax = plt.subplots()
-ax.bar(df['Nombre'], df['Edad'])
-st.pyplot(fig)
+
 
 # Interactividad con un widget
 edad_minima = st.slider('Selecciona la edad mínima', min_value=20, max_value=40, value=25)
